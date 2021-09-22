@@ -1,105 +1,124 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/M0nica/gatsby-solar-system"><img src="https://www.netlify.com/img/deploy/button.svg" alt="deploy to netlify button"></a>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+<div> 
+  <h1 align="center">Gatsby Workshop</h1>
+  <p>
+    This workshop covers the fundamentals of developing fast, accessible sites with <a href="https://www.gatsbyjs.com/">Gatsby</a>, a React framework, and dive deep into the building blocks you’ll need to build your own custom Gatsby sites.
+    
+   After completing a mix of lectures and exercises you’ll be able to build a Gatsby site from the ground up and deploy it live. In particular, you’ll learn the ins and outs of creating Gatsby sites, from selecting a starter or theme, using GraphQL to generate the data layer, making Markdown content interactive with MDX, deploying your site, and more!
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+  </p>
+</div>
 
-## 🚀 Quick start
+<hr />
 
-1.  **Create a Gatsby site.**
+## Prerequisites
 
-    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)) to create a new site, specifying the default starter.
+- This workshop is for JavaScript developers who haven't had extensive experience with Gatsby and want a deeper understanding of Gatsby.
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+## System Requirements
 
-1.  **Start developing.**
+- [git][git] v2 or greater
+- [NodeJS][node] v12 or greater
+- [npm][npm] v6 or greater
 
-    Navigate into your new site’s directory and start it up.
+All of these must be available in your `PATH`. To verify things are set up
+properly, you can run this:
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+```shell
+git --version
+node --version
+npm --version
+```
 
-1.  **Open the source code and start editing!**
+If you have trouble with any of these, learn more about the PATH environment
+variable and how to fix it here for [windows][win-path] or
+[mac/linux][mac-path].
 
-    Your site is now running at `http://localhost:8000`!
+## Setup
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+After you've made sure to have the correct things (and versions) installed, you
+should be able to just run a few commands to get set up:
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+```
+git clone https://github.com/m0nica/gatsby-solar-system.git
+cd site
+npm install
+```
 
-## 🚀 Quick start (Gatsby Cloud)
+or
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+```
+git clone https://github.com/m0nica/gatsby-solar-system.git
+cd site
+yarn
+```
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-default)
+## Running the app
 
-## 🧐 What's inside?
+To get the app up and running (and really see if it worked), run:
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+```shell
+cd site
+npm run start
+```
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+or
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+```shell
+cd site
+yarn start
+```
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+This should start up the site locally in your browser at http://localhost:8000/. For reference the production deployment of the inital site looks like: https://deploy-preview-4--gatsbyjsdemo.netlify.app/ and the production deploymeny of the final site looks like: https://deploy-preview-14--gatsbyjsdemo.netlify.app/ (subject to change).
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+### Exercises
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+The exercises each have a branch associated with them. You can find the exercises under `site/INSTRUCTIONS/` in files labelled like `01_instructions.md`. To get the latest working code for an exercise check out the exercise solution branch.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+- [00 • Running a Gatsby Application Locally](site/INSTRUCTIONS/00_instructions.md)
+- [01 • Customize Gatsby Site Information](site/INSTRUCTIONS/01_instructions.md)
+- [03 • Create a new page in Gatsby](site/INSTRUCTIONS/03_instructions.md)
+- [04 • Make Footer Data Dynamic](site/INSTRUCTIONS/04_instructions.md)
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail).
+05 • Add planet data to the graphql server
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+06 • Dynamically create page for each planet
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+07 • Add Dynamic Links to Navigation
 
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+08 • Add Links to Card Component
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+09 • Add Addt'l Content to Page
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+10 • Add MDX to Pages
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+11 • Add  next/prev Navigation Links
 
-## 🎓 Learning Gatsby
+### Workflow
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+- Checkout the main branch
+- Read through the instructions in `site/INSTRUCTIONS` and complete one set of instructions at a time
+- Start exercise
+- Go through every mentioned file and follow the instructions
+- We all come back together
+- I go through the solution and answer questions
+- Move on to the next exercise.
+- Repeat.
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+### View Slides
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+- Go to www.monica.dev/gatsbyworkshop
+- The slides can be run locally from this repo by doing the following:
+- `cd slides`
+- `npm install`
+- `npm run dev`
+- View slides locally at: [http://localhost:3000/](http://localhost:3000/)
 
-## 💫 Deploy
-
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/products/cloud/)
-
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+<!-- prettier-ignore-start -->
+[npm]: https://www.npmjs.com/
+[node]: https://nodejs.org
+[git]: https://git-scm.com/
+[win-path]: https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/
+[mac-path]: http://stackoverflow.com/a/24322978/971592
+<!-- prettier-ignore-end -->
