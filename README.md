@@ -70,16 +70,16 @@ cd site
 yarn start
 ```
 
-This should start up the site locally in your browser at http://localhost:8000/. For reference the production deployment of the inital site looks like: https://deploy-preview-4--gatsbyjsdemo.netlify.app/ and the production deploymeny of the final site looks like: https://deploy-preview-14--gatsbyjsdemo.netlify.app/ (subject to change).
+This should start up the site locally in your browser at http://localhost:8000/. For reference the production deployment of the inital site looks like: **TBD Netlify link** and the production deploymeny of the final site looks like: **TBD Netlify link**
 
 ### Exercises
 
 The exercises each have a branch associated with them. You can find the exercises under `site/INSTRUCTIONS/` in files labelled like `01_instructions.md`. To get the latest working code for an exercise check out the exercise solution branch.
 
-- [00 • Running a Gatsby Application Locally](/INSTRUCTIONS/00_instructions.md)
-- [01 • Customize Gatsby Site Information](/INSTRUCTIONS/01_instructions.md)
-- [03 • Create a new page in Gatsby](/INSTRUCTIONS/03_instructions.md)
-- [04 • Make Footer Data Dynamic](/INSTRUCTIONS/04_instructions.md)
+- [00 • Running a Gatsby Application Locally](/instructions/00_instructions.md)
+- [01 • Customize Gatsby Site Information](/instructions/01_instructions.md)
+- [03 • Create a new page in Gatsby](/instructions/03_instructions.md)
+- [04 • Make Footer Data Dynamic](/instructions/04_instructions.md)
 
 05 • Add planet data to the graphql server
 
