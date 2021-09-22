@@ -76,10 +76,10 @@ This should start up the site locally in your browser at http://localhost:8000/.
 
 The exercises each have a branch associated with them. You can find the exercises under `site/INSTRUCTIONS/` in files labelled like `01_instructions.md`. To get the latest working code for an exercise check out the exercise solution branch.
 
-- [00 • Running a Gatsby Application Locally](site/INSTRUCTIONS/00_instructions.md)
-- [01 • Customize Gatsby Site Information](site/INSTRUCTIONS/01_instructions.md)
-- [03 • Create a new page in Gatsby](site/INSTRUCTIONS/03_instructions.md)
-- [04 • Make Footer Data Dynamic](site/INSTRUCTIONS/04_instructions.md)
+- [00 • Running a Gatsby Application Locally](/INSTRUCTIONS/00_instructions.md)
+- [01 • Customize Gatsby Site Information](/INSTRUCTIONS/01_instructions.md)
+- [03 • Create a new page in Gatsby](/INSTRUCTIONS/03_instructions.md)
+- [04 • Make Footer Data Dynamic](/INSTRUCTIONS/04_instructions.md)
 
 05 • Add planet data to the graphql server
 
