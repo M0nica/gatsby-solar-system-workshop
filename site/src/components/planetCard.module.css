@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  row-gap: 1em;
+  column-gap: 1em;
+}
+
+.card {
+  margin: 0 auto;
+  padding: 1em;
+  min-width: 400px;
+  background-color: var(--dark-teal);
+  border-radius: 25px;
+  text-align: center;
+}
+.title {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.title,
+.info {
+  text-align: center;
+  color: var(--white);
+}
+
+.info {
+  font-size: 0.85em;
+  font-weight: 200;
+}
+
+.image {
+  height: 200px;
+  -moz-animation: heartpulse 4s infinite;
+  -webkit-animation: pulse 4s infinite;
+  animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
