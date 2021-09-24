@@ -50,7 +50,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle || "Placeholder Title"}
+          {siteTitle}
         </Link>
       </h1>
       <ul>

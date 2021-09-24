@@ -15,7 +15,7 @@ import "./layout.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      <Header siteTitle={"Placeholder Title"} />
       <div
         style={{
           margin: `0 auto`,
