@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Solar System`,
+    title: `Gatsby Solar System`,
     description: `A website exploring the solar system and the Gatsby technology`,
     author: `Monica Powell`,
     siteUrl: `https://TBD.com/`,
