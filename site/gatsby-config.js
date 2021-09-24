@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Solar System`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@m0nica`,
+    title: `Solar System`,
+    description: `A website exploring the solar system and the Gatsby technology`,
+    author: `Monica Powell`,
     siteUrl: `https://TBD.com/`,
   },
   plugins: [
