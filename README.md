@@ -53,7 +53,6 @@ git clone https://github.com/m0nica/gatsby-solar-system.git
 cd site
 yarn
 ```
-
 ## Running the app
 
 To get the app up and running (and really see if it worked), run:
@@ -70,7 +69,14 @@ cd site
 yarn start
 ```
 
-This should start up the site locally in your browser at http://localhost:8000/. For reference the production deployment of the inital site looks like: https://deploy-preview-4--gatsbyjsdemo.netlify.app/ and the production deploymeny of the final site looks like: https://deploy-preview-14--gatsbyjsdemo.netlify.app/ (subject to change).
+
+This should start up the site locally in your browser at http://localhost:8000/. For reference the production deployment of the inital site looks like: TBD and the production deploymeny of the final site looks like: TBD(subject to change).
+
+If you encounter the following error 
+```
+npm ERR! missing script: develop
+```
+that likely means you are in the root of the directory and need to `cd` into the `site` folder.
 
 ### Exercises
 
