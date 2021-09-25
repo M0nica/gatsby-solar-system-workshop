@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const hardCodedLinks = [
   {
     title: "Home",
-    href: "#",
+    href: "/",
   },
   { title: "Contact", href: "#" },
 ]
@@ -50,7 +50,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle || "Placeholder Title"}
+          {siteTitle}
         </Link>
       </h1>
       <ul>
