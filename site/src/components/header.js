@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const hardCodedLinks = [
   {
     title: "Home",
-    href: "#",
+    href: "/",
   },
   { title: "Contact", href: "#" },
 ]
