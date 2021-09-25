@@ -7,7 +7,7 @@ const hardCodedLinks = [
     title: "Home",
     href: "/",
   },
-  { title: "Contact", href: "#" },
+  { title: "Contact", href: "/contact" },
 ]
 
 const NavLinks = () => {
