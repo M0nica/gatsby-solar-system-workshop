@@ -84,8 +84,9 @@ The exercises each have a branch associated with them. You can find the exercise
 
 - [00 • Running a Gatsby Application Locally](site/INSTRUCTIONS/00_instructions.md)
 - [01 • Customize Gatsby Site Information](site/INSTRUCTIONS/01_instructions.md)
+- [02 • Make Navigation and Footer Data Dynamic](site/INSTRUCTIONS/02_instructions.md)
 - [03 • Create a new page in Gatsby](site/INSTRUCTIONS/03_instructions.md)
-- [04 • Make Footer Data Dynamic](site/INSTRUCTIONS/04_instructions.md)
+
 
 05 • Add planet data to the graphql server
 
