@@ -86,9 +86,7 @@ The exercises each have a branch associated with them. You can find the exercise
 - [01 • Customize Gatsby Site Information](site/INSTRUCTIONS/01_instructions.md)
 - [02 • Make Navigation and Footer Data Dynamic](site/INSTRUCTIONS/02_instructions.md)
 - [03 • Create a new page in Gatsby](site/INSTRUCTIONS/03_instructions.md)
-
-
-05 • Add planet data to the graphql server
+- [04 • Add planet data to the graphql server](site/INSTRUCTIONS/04_instructions.md)
 
 06 • Dynamically create page for each planet
 
