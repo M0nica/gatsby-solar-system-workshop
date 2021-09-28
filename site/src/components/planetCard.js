@@ -20,7 +20,7 @@ const PlanetCard = () => {
             <hr />
             <Fact> Orbit | {orbit || "TBD"} </Fact>
             <Fact> Max Temp | {maxTemp || "TBD"}</Fact>
-            <Button text="Learn More" to="#" />
+            <Button text="Learn More" to={name.toLowerCase()} />
           </div>
         )
       })}
