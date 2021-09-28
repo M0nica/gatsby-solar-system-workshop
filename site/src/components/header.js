@@ -5,27 +5,32 @@ import { Link } from "gatsby"
 const hardCodedLinks = [
   {
     title: "Home",
-    href: "/",
+    href: "#",
   },
-  { title: "Contact", href: "/contact" },
+  { title: "Contact", href: "contact" },
 ]
 
-const NavLinks = () => {
-  return hardCodedLinks.map(link => (
+const NavLinks = planetLinks => {
+  const planets = planetLinks.planetLinks.reduce((acc, item) => {
+    acc.push({ href: item.slug, title: item.frontmatter.name })
+    return acc
+  }, [])
+  const links = hardCodedLinks.concat(planets)
+  return links.map(link => (
     <li
       style={{
         display: `inline`,
         padding: `1em`,
       }}
     >
-      <Link style={{ textDecoration: `none` }} to={link.href}>
+      <Link style={{ textDecoration: `none` }} to={`/${link.href}`}>
         {link.title}
       </Link>
     </li>
   ))
 }
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, planetLinks }) => (
   <header
     style={{
       background: `#020524`,
@@ -54,7 +59,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <ul>
-        <NavLinks />
+        <NavLinks planetLinks={planetLinks} />
       </ul>
     </div>
   </header>

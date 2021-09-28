@@ -21,11 +21,22 @@ const Layout = ({ children }) => {
           author
         }
       }
+      allMdx {
+        nodes {
+          frontmatter {
+            name
+          }
+          slug
+        }
+      }
     }
   `)
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header
+        siteTitle={data.site.siteMetadata?.title || `Title`}
+        planetLinks={data.allMdx.nodes}
+      />
       <div
         style={{
           margin: `0 auto`,
