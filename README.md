@@ -87,18 +87,17 @@ The exercises each have a branch associated with them. You can find the exercise
 - [02 • Make Navigation and Footer Data Dynamic](site/INSTRUCTIONS/02_instructions.md)
 - [03 • Create a new page in Gatsby](site/INSTRUCTIONS/03_instructions.md)
 - [04 • Add planet data to the graphql server](site/INSTRUCTIONS/04_instructions.md)
+- [05 • Programmatically Create Page for Each Planet](site/INSTRUCTIONS/05_instructions.md)
 
-06 • Dynamically create page for each planet
+06 • Add Dynamic Links to Navigation
 
-07 • Add Dynamic Links to Navigation
+07 • Add Links to Card Component
 
-08 • Add Links to Card Component
+08 • Add Addt'l Content to Page
 
-09 • Add Addt'l Content to Page
+09 • Add MDX to Pages
 
-10 • Add MDX to Pages
-
-11 • Add  next/prev Navigation Links
+10 • Add  next/prev Navigation Links
 
 ### Workflow
 
