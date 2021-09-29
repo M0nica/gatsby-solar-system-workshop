@@ -47,7 +47,7 @@ export default IndexPage
 Make additional customizations to the /contact page 
 
 ## Example Solution Code
-- 
+- https://github.com/M0nica/gatsby-solar-system/pull/4/files
 
 ## Example Solution Demo
 - 
