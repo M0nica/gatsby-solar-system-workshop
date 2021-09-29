@@ -53,5 +53,5 @@ query SiteTitleQuery {
 - gatsby-config.js
 
 ## Example Solution Code
-
+https://github.com/M0nica/gatsby-solar-system/pull/2/files
 ## Example Solution Demo

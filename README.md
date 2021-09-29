@@ -89,9 +89,9 @@ The exercises each have a branch associated with them. You can find the exercise
 - [04 • Add planet data to the graphql server](site/INSTRUCTIONS/04_instructions.md)
 - [05 • Programmatically Create Page for Each Planet](site/INSTRUCTIONS/05_instructions.md)
 
-06 • Add Dynamic Links to Navigation
+06 • Add Links to Card Component
 
-07 • Add Links to Card Component
+07 • Add Dynamic Links to Navigation
 
 08 • Add Addt'l Content to Page
 
