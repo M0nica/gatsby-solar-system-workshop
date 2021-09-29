@@ -90,12 +90,9 @@ The exercises each have a branch associated with them. You can find the exercise
 - [05 • Programmatically Create Page for Each Planet](site/INSTRUCTIONS/05_instructions.md)
 - [06 • Add Links to Card Component](site/INSTRUCTIONS/06_instructions.md)
 - [07 • Add Dynamic Links to Navigation](site/INSTRUCTIONS/07_instructions.md)
+- [08 • Add Plaintext Content to Planet Page](site/INSTRUCTIONS/08_instructions.md)
+- [09 • Add MDX (React Components) to Planet Page](#)
 
-08 • Add Addt'l Content to Page
-
-09 • Add MDX to Pages
-
-10 • Add  next/prev Navigation Links
 
 ### Workflow
 
@@ -110,12 +107,7 @@ The exercises each have a branch associated with them. You can find the exercise
 
 ### View Slides
 
-- Go to www.monica.dev/gatsbyworkshop
-- The slides can be run locally from this repo by doing the following:
-- `cd slides`
-- `npm install`
-- `npm run dev`
-- View slides locally at: [http://localhost:3000/](http://localhost:3000/)
+- At www.monica.dev/gatsbyworkshopLINKTBD
 
 <!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
@@ -124,3 +116,10 @@ The exercises each have a branch associated with them. You can find the exercise
 [win-path]: https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/
 [mac-path]: http://stackoverflow.com/a/24322978/971592
 <!-- prettier-ignore-end -->
+
+## Credits
+- Planet Images are from https://www.vecteezy.com
+- Built ontop of https://github.com/gatsbyjs/gatsby-starter-default
+
+## Disclaimers
+The planet facts may or may not be accurate.
