@@ -129,7 +129,7 @@ export const query = graphql`
 
 
 ## Example Solution Code
--
+- https://github.com/M0nica/gatsby-solar-system/pull/6/files
 
 ## Example Solution Demo
-- 
+- https://deploy-preview-6--gatsbysolarsystem.netlify.app/
