@@ -64,7 +64,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
   // we only care about the Mdx node type where our planet data is defined
-  if (node.internal.type === `Mdx`) {
+  if (node.internal.type === `Mdx` && node?.name) {
     // let's add a new field to the node for the slug
     createNodeField({
       node,
