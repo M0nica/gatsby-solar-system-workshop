@@ -64,7 +64,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
   // we only care about the Mdx node type where our planet data is defined
-  if (node.internal.type === `Mdx`) {
+  if (node.internal.type === `Mdx` && node?.name) {
     // let's add a new field to the node for the slug
     createNodeField({
       node,
@@ -129,7 +129,7 @@ export const query = graphql`
 
 
 ## Example Solution Code
--
+- https://github.com/M0nica/gatsby-solar-system/pull/6/files
 
 ## Example Solution Demo
-- 
+- https://deploy-preview-6--gatsbysolarsystem.netlify.app/
