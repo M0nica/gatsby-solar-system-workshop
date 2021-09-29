@@ -29,19 +29,3 @@ export const query = graphql`
     }
   }
 `
-
-// query fetchPlanets {
-//   allMdx {
-//     edges {
-//       node {
-//         id
-//         frontmatter {
-//           img
-//           name
-//           maxTemp
-//           orbit
-//         }
-//       }
-//     }
-//   }
-// }
