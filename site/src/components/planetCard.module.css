@@ -10,7 +10,8 @@
 .card {
   margin: 0 auto;
   padding: 1em;
-  min-width: 400px;
+  width: 400px;
+  max-width: 80%;
   background-color: var(--dark-teal);
   border-radius: 25px;
   text-align: center;
