@@ -88,10 +88,8 @@ The exercises each have a branch associated with them. You can find the exercise
 - [03 • Create a new page in Gatsby](site/INSTRUCTIONS/03_instructions.md)
 - [04 • Add planet data to the graphql server](site/INSTRUCTIONS/04_instructions.md)
 - [05 • Programmatically Create Page for Each Planet](site/INSTRUCTIONS/05_instructions.md)
-
-06 • Add Links to Card Component
-
-07 • Add Dynamic Links to Navigation
+- [06 • Add Links to Card Component](site/INSTRUCTIONS/06_instructions.md)
+- [07 • Add Dynamic Links to Navigation](site/INSTRUCTIONS/07_instructions.md)
 
 08 • Add Addt'l Content to Page
 
