@@ -78,7 +78,7 @@ query fetchPlanets {
           "node": {
             "id": "d88334e6-84bf-53df-852a-f8817a13e019",
             "frontmatter": {
-              "img": "/planets/jupiter.svg",
+              "img": "./jupiter.svg",
               "name": "Jupiter",
               "maxTemp": "1,340 °F (725 °C)",
               "orbit": "12 years"
@@ -89,7 +89,7 @@ query fetchPlanets {
           "node": {
             "id": "0ec595bf-c8b8-5507-acc3-cd50d883c08a",
             "frontmatter": {
-              "img": "/planets/earth.svg",
+              "img": "./earth.svg",
               "name": "Earth",
               "maxTemp": "134.1 °F (56.7 °C)",
               "orbit": "365 days"
@@ -100,7 +100,7 @@ query fetchPlanets {
           "node": {
             "id": "bf0037dc-12fc-5c9a-aedc-834b4a781d63",
             "frontmatter": {
-              "img": "/planets/mercury.svg",
+              "img": "./mercury.svg",
               "name": "Mercury",
               "maxTemp": "800°F (430°C)",
               "orbit": "88 days"
@@ -111,7 +111,7 @@ query fetchPlanets {
           "node": {
             "id": "c826a6f4-3149-57e0-b538-9e0099427443",
             "frontmatter": {
-              "img": "/planets/neptune.svg",
+              "img": "./neptune.svg",
               "name": "Neptune",
               "maxTemp": "-328 °F (-200 °C)",
               "orbit": "165 years"
@@ -122,7 +122,7 @@ query fetchPlanets {
           "node": {
             "id": "fe9ffecb-7eb8-5556-baa4-2cd4157c7327",
             "frontmatter": {
-              "img": "/planets/saturn.svg",
+              "img": "./saturn.svg",
               "name": "Saturn",
               "maxTemp": "134 °F (57 °C)",
               "orbit": "29 years"
