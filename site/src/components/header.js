@@ -1,64 +1,82 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import * as navStyles from "./header.module.css"
 
-const hardCodedLinks = [
-  {
-    title: "Home",
-    href: "/",
-  },
-  { title: "Contact", href: "#" },
-]
-
-const NavLinks = () => {
-  return hardCodedLinks.map(link => (
+const NavLinks = ({ links }) => {
+  return links.map(link => (
     <li
       style={{
         display: `inline`,
         padding: `1em`,
       }}
     >
-      <Link style={{ textDecoration: `none` }} to={link.href}>
+      <Link style={{ textDecoration: `none` }} to={`/${link.href}`}>
         {link.title}
       </Link>
     </li>
   ))
 }
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#020524`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
+function Header({ siteTitle, planetLinks = [] }) {
+  const [planetMenuIsOpen, setPlanetMenuIsOpen] = React.useState(false)
+
+  const planets = planetLinks.reduce((acc, item) => {
+    acc.push({ href: item.slug, title: item.frontmatter.name })
+    return acc
+  }, [])
+
+  return (
+    <header
       style={{
-        margin: `0 auto`,
-        maxWidth: 1600,
-        padding: `1.45rem 1.0875rem`,
-        display: `flex`,
-        justifyContent: `space-between`,
-        fontSize: `1.5em`,
+        background: `#020524`,
+        marginBottom: `1.45rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-      <ul>
-        <NavLinks />
-      </ul>
-    </div>
-  </header>
-)
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 1600,
+          padding: `1.45rem 1.0875rem`,
+          display: `flex`,
+          justifyContent: `space-between`,
+          fontSize: `1em`,
+          flexDirection: `column`,
+        }}
+      >
+        <h1 style={{ margin: 0 }}>
+          <Link
+            to="/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </h1>
+        <div>
+          {planetMenuIsOpen ? (
+            <ul className={navStyles.sidenav}>
+              <button
+                className={navStyles.closebtn}
+                onClick={() => setPlanetMenuIsOpen(false)}
+              >
+                &times;
+              </button>
+              <NavLinks links={planets} />
+            </ul>
+          ) : (
+            <button onClick={() => setPlanetMenuIsOpen(true)}>Planets</button>
+          )}{" "}
+          <Link style={{ textDecoration: `none` }} to="/#">
+            Contact
+          </Link>
+        </div>
+      </div>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
