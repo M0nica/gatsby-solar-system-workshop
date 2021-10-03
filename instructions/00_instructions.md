@@ -22,3 +22,6 @@ Gatsby websites are JavaScript applications and generally have a `package.json` 
 
 ## Example Solution Demo
 - n/a
+
+## Next Exercise
+[01 • Customize Gatsby Site Information](01_instructions.md)

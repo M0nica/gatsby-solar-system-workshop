@@ -10,7 +10,7 @@ Our site's Button component uses the [Gatsby Link](https://www.gatsbyjs.com/docs
 - src/components/planetCard.js
 
 ## Example Solution Code
-- https://github.com/M0nica/gatsby-solar-system/pull/7
+- https://github.com/M0nica/gatsby-solar-system/pull/7/files
 
 ## Example Solution Demo
 -  https://deploy-preview-7--gatsbysolarsystem.netlify.app
