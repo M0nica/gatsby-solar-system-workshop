@@ -9,7 +9,7 @@ We'll be using the [onCreateNode](https://www.gatsbyjs.com/docs/node-apis/#onCre
 
 
 Pages created with `createPages` can have specific data available to them via the context object. 
-```
+```js
 createPage({
       path: node.fields.flavor,
       component: path.resolve(`./src/templates/ice-cream.js`),
@@ -22,7 +22,8 @@ createPage({
   ```
   
   The above `createPage()` function creates a new page for a given flavor with the `ice-cream.js` template and then passes the `flavor` into the template's context. The template can then construct queries with variables such as the below query which queries icecreamFlavor by flavor and returns the id, flavor, description and nutritionInfo associated with that flavor. 
-  
+ 
+```graphql
 export const query = graphql`
   query IceCreamDescription($flavor: String) {
     mdx(icecreamFlavor: {eq: $flavor}) {
@@ -33,11 +34,11 @@ export const query = graphql`
     }
   }
 `
-
+```
 
 ## Exercise 🤓
 
-- Generate a standalone planet page for each talk/speaker by creating a `gatsby-node.js` file (starter code below)
+- Generate a standalone planet page for each talk/speaker by updating the `gatsby-node.js` file (starter code below)
 - Create a src template at `src/templates/planet.js` that renders the planet data that is passed into the template from `createPages`
 
 ## Notes: 
@@ -46,8 +47,6 @@ gatsby-node.js` when the server needs to be restarted
 
 - Visit https://localhost:8000/slug or another non-existent URL to view a list of all of the valid pages for the site. The planet pages should appear on that page if the pages were succesfully generated.
   
-## Preview of Finished Exercise:
-
 
 ## Starter Code
 
@@ -109,7 +108,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
 We'll need to write a GraphQL query to get data for the `templates/planet.js` file. The below GraphQL query stub uses the variable `$slug` to query based on the current slug and return the requested data for the mdx node tht matches that slug. 
 
-```gql
+```graphql
 import { graphql } from "gatsby";
 
 export const query = graphql`
@@ -133,3 +132,6 @@ export const query = graphql`
 
 ## Example Solution Demo
 - https://deploy-preview-6--gatsbysolarsystem.netlify.app/
+
+## Next Exercise:
+[06 • Add Links to Card Component](06_instructions.md)
