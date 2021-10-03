@@ -19,10 +19,11 @@ So far we've been rendering only frontmatter data on the individual planet pages
 `
 ```
 
-In order to render additional content from the planet `.mdx`  outside of the frontmatter at the top of the file we will need to update our query to also query for the `body` of our mdx files.
+In order to render additional content from the planet `.mdx`  outside of the frontmatter at the top of the file we will need:
 
-We will then be able to use the `MDXRenderer`
-to render the body within the planet template.
+1) to update our query to also query for the `body` of our mdx files.
+
+2) We will then be able to use the `MDXRenderer` to render the body within the planet template.
 
  > MDXRenderer is a React component that takes compiled MDX content and renders it. You will need to use this if your MDX content is coming from a GraphQL page query or StaticQuery. Source: https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#mdxrenderer
 
@@ -36,7 +37,7 @@ to render the body within the planet template.
  MDX as opposed to plain Markdown enables us to use JSX syntax and Markdown within the same files to more easily compose complex content with the power of JSX and the generally more straightforward syntax of Markdown.
 
 ## Exercise 🤓
-- Update the individual planet pages to include summary content outside of the current frontmatter/meta data that is appearing on those pages. 
+- Update the individual planet pages to include summary content from the body of those files in addition to the current frontmatter/meta data that is appearing on those pages. 
 
 
 ## Files 🗂
