@@ -54,4 +54,6 @@ query SiteTitleQuery {
 
 ## Example Solution Code
 https://github.com/M0nica/gatsby-solar-system/pull/2/files
+
 ## Example Solution Demo
+https://deploy-preview-2--gatsbysolarsystem.netlify.app/
