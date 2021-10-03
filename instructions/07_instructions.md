@@ -30,7 +30,7 @@ In `layout` we already have a GraphQL query that resembles
 - src/components/header.js
 
 ## Example Solution Code
-- https://github.com/M0nica/gatsby-solar-system/pull/8
+- https://github.com/M0nica/gatsby-solar-system/pull/8/files
 
 ## Example Solution Demo
 -  https://deploy-preview-8--gatsbysolarsystem.netlify.app

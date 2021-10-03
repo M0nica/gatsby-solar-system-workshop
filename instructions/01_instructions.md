@@ -1,6 +1,6 @@
 # 01 • Customize Gatsby Site Information
 ## Background 📚
-Generally important Gatsby site configuration and meta data lives within the gatsby-config.js file at the root of the site folder. `gatsby-config` is endlessly customizable hover you may often see a gatsby-config.js file that resembles:
+Generally important Gatsby site configuration and meta data lives within the gatsby-config.js file at the root of the site folder. `gatsby-config` is endlessly customizable however you may often see a gatsby-config.js file that resembles:
 
 ```js
 module.exports = {
@@ -20,10 +20,10 @@ module.exports = {
 };
 ```
 
-The siteMetadata from the gatsby-config can be accessed throughout the site via GraphQL queries and is a common pattern for referencing sitewide metadata within Gatsby applications. The array of plugins allow you to configure 2300+ Gatsby Plugins for your site. Check out the Gatsby site for more information on the Gatsby Config API. 
+The `siteMetadata` from the gatsby-config can be accessed throughout the site via GraphQL queries and is a common pattern for referencing sitewide metadata within Gatsby applications. The array of plugins allow you to configure 2300+ Gatsby Plugins for your site. Check out the Gatsby site for more information on the Gatsby Config API. 
 
 ## Exercise 🤓
-Customize the siteMetadata object in the gatsby-config.js with your own information (i.e, name, site title, site description, twitter handle, etc.)
+Customize the siteMetadata object in the gatsby-config.js with your own information (i.e, description, site title, author, etc.)
  
 Note: Changes to the gatsby-config require restarting the server to see them on the site (i.e. CTRL + C and then run `npm run start`)
 
@@ -54,4 +54,10 @@ query SiteTitleQuery {
 
 ## Example Solution Code
 https://github.com/M0nica/gatsby-solar-system/pull/2/files
+
 ## Example Solution Demo
+https://deploy-preview-2--gatsbysolarsystem.netlify.app/
+
+## Next Exercise
+[02 • Make Navigation and Footer Data Dynamic](02_instructions.md)
+
