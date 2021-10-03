@@ -2,7 +2,7 @@
 
 ## Background 📚
 
-We just hard-coded the links for Exercise 6 but we can be smarter by writing a GraphQL query to retrieve the slugs for the planets (in `layout`) and then map through those links in the `header`.
+We just hard-coded the links for Exercise 6 but we can implement a smart solution by writing a GraphQL query to retrieve the slugs for the planets (in `layout`) and then map through those links in the `header`.
 
 In `layout` we already have a GraphQL query that resembles
 
@@ -34,3 +34,6 @@ In `layout` we already have a GraphQL query that resembles
 
 ## Example Solution Demo
 -  https://deploy-preview-8--gatsbysolarsystem.netlify.app
+
+## Next Exercise:
+[08 •  Add Plaintext Content to Planet Page](08_instructions.md)
