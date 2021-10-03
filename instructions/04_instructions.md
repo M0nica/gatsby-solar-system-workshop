@@ -1,9 +1,11 @@
-# 04 • Adding Planet Data to the GraphQL Sever
+# 04 • Adding Planet Data to the GraphQL Server
 
 ## Background 📚
-The Gatsby ecosystem involves a wide variety of plugins that help support the core functionality of Gatsby sites as well as provide additional enhancements. A popular Gatsby plugin is the gatsby-source-file-system plugin (https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/) which enables you to add local data to the site’s internal GraphQL API. 
+The Gatsby ecosystem involves a wide variety of plugins that help support the core functionality of Gatsby sites as well as provide additional enhancements. A popular Gatsby plugin is the [gatsby-source-file-system plugin](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/) which enables you to add local data to the site’s internal GraphQL API. 
  
 > The plugin creates File nodes from files. The various “transformer” plugins can transform File nodes into various other types of data e.g. gatsby-transformer-json transforms JSON files into JSON data nodes and gatsby-transformer-remark transforms markdown files into MarkdownRemark nodes from which you can query an HTML representation of the markdown.
+
+
 In order to use the `gatsby-source-filesystem` plugin once it is installed as a project dependency you will need to update the `gatsby-config.js` file to use the plugin. This is the same file where we configured the site meta data earlier. In addition to the `siteMetaData` key of the config object is an array named `plugins` which is where Gatsby plugins are generally installed.
 In our case in addition to using the gatsby-source-filesystem plugin we should use the `gatsby-plugin-mdx`  plugin to parse data from YAML files. Below is an example of a `gatsby-config.js` where the plugins has the gatsby-source-filesystem configured to add the data that lives in the `images` directory to its GraphQL API. 
  
@@ -48,7 +50,7 @@ For the path of the data you can use the pre-existing planet data which lives in
  
 If you successfully added the planet data to the GraphQL API then you can run: 
 
-```
+```graphql
 query fetchPlanets {
   allMdx {
     edges {
@@ -78,7 +80,7 @@ query fetchPlanets {
           "node": {
             "id": "d88334e6-84bf-53df-852a-f8817a13e019",
             "frontmatter": {
-              "img": "/planets/jupiter.svg",
+              "img": "./jupiter.svg",
               "name": "Jupiter",
               "maxTemp": "1,340 °F (725 °C)",
               "orbit": "12 years"
@@ -89,7 +91,7 @@ query fetchPlanets {
           "node": {
             "id": "0ec595bf-c8b8-5507-acc3-cd50d883c08a",
             "frontmatter": {
-              "img": "/planets/earth.svg",
+              "img": "./earth.svg",
               "name": "Earth",
               "maxTemp": "134.1 °F (56.7 °C)",
               "orbit": "365 days"
@@ -100,7 +102,7 @@ query fetchPlanets {
           "node": {
             "id": "bf0037dc-12fc-5c9a-aedc-834b4a781d63",
             "frontmatter": {
-              "img": "/planets/mercury.svg",
+              "img": "./mercury.svg",
               "name": "Mercury",
               "maxTemp": "800°F (430°C)",
               "orbit": "88 days"
@@ -111,7 +113,7 @@ query fetchPlanets {
           "node": {
             "id": "c826a6f4-3149-57e0-b538-9e0099427443",
             "frontmatter": {
-              "img": "/planets/neptune.svg",
+              "img": "./neptune.svg",
               "name": "Neptune",
               "maxTemp": "-328 °F (-200 °C)",
               "orbit": "165 years"
@@ -122,7 +124,7 @@ query fetchPlanets {
           "node": {
             "id": "fe9ffecb-7eb8-5556-baa4-2cd4157c7327",
             "frontmatter": {
-              "img": "/planets/saturn.svg",
+              "img": "./saturn.svg",
               "name": "Saturn",
               "maxTemp": "134 °F (57 °C)",
               "orbit": "29 years"
@@ -139,4 +141,10 @@ query fetchPlanets {
 
 ## Example Solution Code
 https://github.com/M0nica/gatsby-solar-system/pull/5/files
+
 ## Example Solution Demo
+https://deploy-preview-5--gatsbysolarsystem.netlify.app
+
+## Next Exercise:
+[05 •  Programmatically Create Page for Each Planet](05_instructions.md)
+
