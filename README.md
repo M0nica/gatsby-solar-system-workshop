@@ -91,7 +91,7 @@ The exercises each have a branch associated with them. You can find the exercise
 - [06 • Add Links to Card Component](site/INSTRUCTIONS/06_instructions.md)
 - [07 • Add Dynamic Links to Navigation](site/INSTRUCTIONS/07_instructions.md)
 - [08 • Add Plaintext Content to Planet Page](site/INSTRUCTIONS/08_instructions.md)
-- [09 • Add MDX (React Components) to Planet Page](#)
+- [09 • Add MDX (React Components) to Planet Page](site/INSTRUCTIONS/09_instructions.md)
 
 
 ### Workflow
@@ -107,7 +107,7 @@ The exercises each have a branch associated with them. You can find the exercise
 
 ### View Slides
 
-- At www.monica.dev/gatsbyworkshopLINKTBD
+- At www.monica.dev/jamstackconf21
 
 <!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
