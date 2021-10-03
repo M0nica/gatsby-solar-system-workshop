@@ -80,18 +80,18 @@ that likely means you are in the root of the directory and need to `cd` into the
 
 ### Exercises
 
-The exercises each have a branch associated with them. You can find the exercises under `site/INSTRUCTIONS/` in files labelled like `01_instructions.md`. To get the latest working code for an exercise check out the exercise solution branch.
+The exercises each have a branch associated with them. You can find the exercises under `instructions/` in files labelled like `01_instructions.md`. To get the latest working code for an exercise check out the exercise solution branch.
 
-- [00 • Running a Gatsby Application Locally](site/INSTRUCTIONS/00_instructions.md)
-- [01 • Customize Gatsby Site Information](site/INSTRUCTIONS/01_instructions.md)
-- [02 • Make Navigation and Footer Data Dynamic](site/INSTRUCTIONS/02_instructions.md)
-- [03 • Create a new page in Gatsby](site/INSTRUCTIONS/03_instructions.md)
-- [04 • Add planet data to the graphql server](site/INSTRUCTIONS/04_instructions.md)
-- [05 • Programmatically Create Page for Each Planet](site/INSTRUCTIONS/05_instructions.md)
-- [06 • Add Links to Card Component](site/INSTRUCTIONS/06_instructions.md)
-- [07 • Add Dynamic Links to Navigation](site/INSTRUCTIONS/07_instructions.md)
-- [08 • Add Plaintext Content to Planet Page](site/INSTRUCTIONS/08_instructions.md)
-- [09 • Add MDX (React Components) to Planet Page](site/INSTRUCTIONS/09_instructions.md)
+- [00 • Running a Gatsby Application Locally](instructions/00_instructions.md)
+- [01 • Customize Gatsby Site Information](instructions/01_instructions.md)
+- [02 • Make Navigation and Footer Data Dynamic](instructions/02_instructions.md)
+- [03 • Create a new page in Gatsby](instructions/03_instructions.md)
+- [04 • Add planet data to the graphql server](instructions/04_instructions.md)
+- [05 • Programmatically Create Page for Each Planet](instructions/05_instructions.md)
+- [06 • Add Links to Card Component](instructions/06_instructions.md)
+- [07 • Add Dynamic Links to Navigation](instructions/07_instructions.md)
+- [08 • Add Plaintext Content to Planet Page](instructions/08_instructions.md)
+- [09 • Add MDX (React Components) to Planet Page](instructions/09_instructions.md)
 
 
 ### Workflow
