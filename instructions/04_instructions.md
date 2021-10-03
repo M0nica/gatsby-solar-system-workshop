@@ -1,9 +1,11 @@
-# 04 • Adding Planet Data to the GraphQL Sever
+# 04 • Adding Planet Data to the GraphQL Server
 
 ## Background 📚
-The Gatsby ecosystem involves a wide variety of plugins that help support the core functionality of Gatsby sites as well as provide additional enhancements. A popular Gatsby plugin is the gatsby-source-file-system plugin (https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/) which enables you to add local data to the site’s internal GraphQL API. 
+The Gatsby ecosystem involves a wide variety of plugins that help support the core functionality of Gatsby sites as well as provide additional enhancements. A popular Gatsby plugin is the [gatsby-source-file-system plugin](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/) which enables you to add local data to the site’s internal GraphQL API. 
  
 > The plugin creates File nodes from files. The various “transformer” plugins can transform File nodes into various other types of data e.g. gatsby-transformer-json transforms JSON files into JSON data nodes and gatsby-transformer-remark transforms markdown files into MarkdownRemark nodes from which you can query an HTML representation of the markdown.
+
+
 In order to use the `gatsby-source-filesystem` plugin once it is installed as a project dependency you will need to update the `gatsby-config.js` file to use the plugin. This is the same file where we configured the site meta data earlier. In addition to the `siteMetaData` key of the config object is an array named `plugins` which is where Gatsby plugins are generally installed.
 In our case in addition to using the gatsby-source-filesystem plugin we should use the `gatsby-plugin-mdx`  plugin to parse data from YAML files. Below is an example of a `gatsby-config.js` where the plugins has the gatsby-source-filesystem configured to add the data that lives in the `images` directory to its GraphQL API. 
  
@@ -48,7 +50,7 @@ For the path of the data you can use the pre-existing planet data which lives in
  
 If you successfully added the planet data to the GraphQL API then you can run: 
 
-```
+```graphql
 query fetchPlanets {
   allMdx {
     edges {
@@ -142,3 +144,7 @@ https://github.com/M0nica/gatsby-solar-system/pull/5/files
 
 ## Example Solution Demo
 https://deploy-preview-5--gatsbysolarsystem.netlify.app
+
+## Next Exercise:
+[05 •  Programmatically Create Page for Each Planet](05_instructions.md)
+
