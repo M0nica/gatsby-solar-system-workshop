@@ -139,4 +139,6 @@ query fetchPlanets {
 
 ## Example Solution Code
 https://github.com/M0nica/gatsby-solar-system/pull/5/files
+
 ## Example Solution Demo
+https://deploy-preview-5--gatsbysolarsystem.netlify.app
