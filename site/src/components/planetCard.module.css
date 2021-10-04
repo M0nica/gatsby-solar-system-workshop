@@ -8,17 +8,22 @@
 }
 
 .card {
+  display: flex;
+  row-gap: 1em;
+  flex-direction: column;
   margin: 0 auto;
   padding: 1em;
   width: 400px;
   max-width: 80%;
-  background-color: var(--dark-teal);
-  border-radius: 25px;
+  border-radius: 10px;
   text-align: center;
 }
 .title {
+  margin-top: 1em;
   text-transform: uppercase;
   font-weight: 500;
+  display: block;
+  border-radius: 10px;
 }
 
 .title,
@@ -33,7 +38,8 @@
 }
 
 .image {
-  height: 200px;
+  height: 175px;
+  margin: 0 auto;
   -moz-animation: heartpulse 4s infinite;
   -webkit-animation: pulse 4s infinite;
   animation: pulse 4s infinite;

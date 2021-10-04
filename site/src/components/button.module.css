@@ -16,5 +16,5 @@
   text-decoration: none;
 }
 .button:hover {
-  background-color: var(--dark-sky-blue);
+  background-color: #1c60fa;
 }
