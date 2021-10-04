@@ -16,11 +16,11 @@ const PlanetCard = () => {
           <div className={cardStyles.card} key={name}>
             <img src={img} alt={name} className={cardStyles.image} />
 
-            <p className={cardStyles.title}>{name} </p>
-            <hr />
-            <Fact> Orbit | {orbit || "TBD"} </Fact>
-            <Fact> Max Temp | {maxTemp || "TBD"}</Fact>
-            <Button text="Learn More" to="#" />
+            <Button
+              className={cardStyles.title}
+              text={`Visit ${name}`}
+              to="#"
+            />
           </div>
         )
       })}
