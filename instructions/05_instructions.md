@@ -38,8 +38,8 @@ export const query = graphql`
 
 ## Exercise 🤓
 
-- Generate a standalone planet page for each talk/speaker by updating the `gatsby-node.js` file (starter code below)
-- Create a src template at `src/templates/planet.js` that renders the planet data that is passed into the template from `createPages`
+- Generate a standalone planet page for each planet by updating the `gatsby-node.js` file (starter code below)
+- Create a src template at `src/templates/planet.js` that renders the planet data that is passed into the template from `createPages` (i.e., name, orbit, maxTemp, img).
 
 ## Notes: 
 - You will need to restart server after making changes to `gatsby-node.js` You should see a warning in terminal with `warn develop process needs to be restarted to apply the changes to
@@ -63,7 +63,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
   // we only care about the Mdx node type where our planet data is defined
-  if (node.internal.type === `Mdx`) {
+  if (node.internal.type === `Mdx` && node?.name) {
     // let's add a new field to the node for the slug
     createNodeField({
       node,
