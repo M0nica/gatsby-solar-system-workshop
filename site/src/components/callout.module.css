@@ -1,0 +1,65 @@
+/* theme colors */
+
+:root {
+  --neon-purple: #b4aaff;
+}
+
+.infoBox::before,
+.infoBox.star::before,
+.infoBox.comet::before,
+.infoBox.moon::before,
+.infoBox.sun::before {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  justify-content: center;
+  position: absolute;
+  left: -1.2rem;
+  border-radius: 50%;
+  align-items: center;
+  top: -0.8rem;
+}
+
+.infoBox.sun::before {
+  content: "☀️";
+  background-color: #44a9ba;
+}
+
+.infoBox.comet::before {
+  content: "☄️";
+  background-color: #382f7e;
+}
+
+.infoBox.star::before {
+  content: "💫";
+  background-color: #ff7828;
+}
+
+.infoBox.moon::before {
+  content: "🌙";
+  background-color: #72bc23;
+}
+
+.infoBox a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  border-bottom: none;
+  background-image: linear-gradient(
+    to top,
+    rgba(180, 170, 255, 0.4) 0%,
+    rgba(180, 170, 255, 0.4) 30%,
+    transparent 40%,
+    transparent 100%
+  );
+}
+
+.infoBox a:hover {
+  background-image: linear-gradient(
+    to top,
+    rgba(180, 170, 255, 1) 0%,
+    rgba(180, 170, 255, 1) 30%,
+    transparent 30%,
+    transparent 100%
+  );
+}
