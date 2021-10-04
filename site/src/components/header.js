@@ -21,10 +21,12 @@ const NavLinks = ({ links }) => {
 function Header({ siteTitle, planetLinks = [] }) {
   const [planetMenuIsOpen, setPlanetMenuIsOpen] = React.useState(false)
 
-  const planets = planetLinks.reduce((acc, item) => {
-    acc.push({ href: item.slug, title: item.frontmatter.name })
-    return acc
-  }, [])
+  const planets = planetLinks
+    .sort((a, b) => a.slug > b.slug)
+    .reduce((acc, item) => {
+      acc.push({ href: item.slug, title: item.frontmatter.name })
+      return acc
+    }, [])
 
   return (
     <header
