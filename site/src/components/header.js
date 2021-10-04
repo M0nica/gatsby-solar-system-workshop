@@ -29,7 +29,6 @@ function Header({ siteTitle, planetLinks = [] }) {
   return (
     <header
       style={{
-        background: `#020524`,
         marginBottom: `1.45rem`,
       }}
     >
@@ -50,12 +49,13 @@ function Header({ siteTitle, planetLinks = [] }) {
             style={{
               color: `white`,
               textDecoration: `none`,
+              paddingLeft: `1em`,
             }}
           >
             {siteTitle}
           </Link>
         </h1>
-        <div>
+        <div className={navStyles.navigationLinks}>
           {planetMenuIsOpen ? (
             <ul className={navStyles.sidenav}>
               <button
@@ -67,7 +67,12 @@ function Header({ siteTitle, planetLinks = [] }) {
               <NavLinks links={planets} />
             </ul>
           ) : (
-            <button onClick={() => setPlanetMenuIsOpen(true)}>Planets</button>
+            <button
+              className={navStyles.openbtn}
+              onClick={() => setPlanetMenuIsOpen(true)}
+            >
+              Planets
+            </button>
           )}{" "}
           <Link style={{ textDecoration: `none` }} to="/contact">
             Contact
