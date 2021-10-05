@@ -39,7 +39,7 @@ export const query = graphql`
 ## Exercise 🤓
 
 - Generate a standalone planet page for each planet by updating the `gatsby-node.js` file (starter code below)
-- Create a src template at `src/templates/planet.js` that renders the planet data that is passed into the template from `createPages` (i.e., name, orbit, maxTemp, img).
+- Create a src template at `src/templates/planet.js` that renders the planet data that is passed into the template from `createPages` (i.e., name, orbit, maxTemp, img). You can use the PlanetFacts component from `src/components` or write your own markup to render the relevant planet information.
 
 ## Notes: 
 - You will need to restart server after making changes to `gatsby-node.js` You should see a warning in terminal with `warn develop process needs to be restarted to apply the changes to
@@ -106,7 +106,7 @@ exports.createPages = async ({ graphql, actions }) => {
 }
 ```
 
-We'll need to write a GraphQL query to get data for the `templates/planet.js` file. The below GraphQL query stub uses the variable `$slug` to query based on the current slug and return the requested data for the mdx node tht matches that slug. 
+We'll need to write a GraphQL query to get data for the `templates/planet.js` file. The below GraphQL query stub uses the variable `$slug` to query based on the current slug and return the requested data for the mdx node that matches that slug. 
 
 ```graphql
 import { graphql } from "gatsby";
@@ -125,6 +125,7 @@ export const query = graphql`
 
 - `src/templates/planets.js`
 - `src/gatbsy-node.js`
+- `src/components/planetFacts`
 
 
 ## Example Solution Code
