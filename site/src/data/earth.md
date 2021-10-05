@@ -15,7 +15,5 @@ Hello fellow Earthlings! This is the current text associated with planet Earth.
 
 <Callout variant="moon"> The Lunar Month is 28 days long. </Callout>
 
-<Callout variant="sun"> The Sun accounts for 99.86% of the mass in the solar system.</Callout>
-
 ## Soundtrack 
 <Spotify spotifyLink="album/7253n8oKnyOumxC2trgmM8" />

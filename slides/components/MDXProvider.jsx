@@ -1,6 +1,6 @@
 import React from "react";
 import { MDXProvider } from "@mdx-js/react";
-import { MdxEmbedProvider } from "@pauliescanlon/gatsby-mdx-embed";
+import { MDXEmbedProvider } from "mdx-embed";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import duotoneSea from "react-syntax-highlighter/dist/cjs/styles/prism/tomorrow";
 import SlidePage from "../layouts/SlidePage";
@@ -32,6 +32,6 @@ const mdComponents = {
 export default ({ children }) => (
   <MDXProvider components={mdComponents}>
     {" "}
-    <MdxEmbedProvider>{children}</MdxEmbedProvider>
+    <MDXEmbedProvider>{children}</MDXEmbedProvider>
   </MDXProvider>
 );

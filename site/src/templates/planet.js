@@ -5,6 +5,7 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXEmbedProvider } from "mdx-embed"
 import Callout from "../components/callout"
+import PlanetFacts from "../components/planetFacts"
 
 const components = {
   Callout,
@@ -17,13 +18,8 @@ export default function planetPage({ data }) {
     <MDXProvider components={components}>
       <MDXEmbedProvider>
         <Layout>
-          <div>
-            <h1>{name}</h1>
-            <h2>{orbit}</h2>
-            {maxTemp}
-            <img src={img} alt={name} width="250px" />
-            <MDXRenderer title={name}>{data.mdx.body}</MDXRenderer>
-          </div>
+          <PlanetFacts name={name} orbit={orbit} img={img} maxTemp={maxTemp} />
+          <MDXRenderer title={name}>{data.mdx.body}</MDXRenderer>
         </Layout>
       </MDXEmbedProvider>
     </MDXProvider>
