@@ -51,3 +51,6 @@ In order to render additional content from the planet `.mdx`  outside of the fro
 
 ## Example Solution Demo
 -  https://deploy-preview-9--gatsbysolarsystem.netlify.app/
+
+## Next Exercise:
+[09 •  Add MDX (React Components) to Planet Page](09_instructions.md)
