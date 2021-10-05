@@ -54,7 +54,9 @@
   );
 }
 
-.infoBox a:hover {
+.infoBox a:hover,
+infoBox a:focus,
+infoBox a:active {
   background-image: linear-gradient(
     to top,
     rgba(180, 170, 255, 1) 0%,
