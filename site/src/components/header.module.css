@@ -25,7 +25,9 @@
   transition: 0.3s;
 }
 
-.sidenav a:hover {
+.sidenav a:hover,
+.sidenav a:focus,
+.sidenav a:active {
   color: #020524;
 }
 
@@ -44,7 +46,9 @@
   margin-right: 1em;
 }
 
-.openbtn:hover {
+.openbtn:hover,
+.openbtn:focus,
+.openbtn:active {
   background-color: #1c60fa;
 }
 

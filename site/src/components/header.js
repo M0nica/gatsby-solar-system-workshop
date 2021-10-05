@@ -20,7 +20,19 @@ const NavLinks = ({ links }) => {
 
 function Header({ siteTitle, planetLinks = [] }) {
   const [planetMenuIsOpen, setPlanetMenuIsOpen] = React.useState(false)
+  React.useEffect(() => {
+    const setFromEvent = e => {
+      if (e.key === "Escape" || e.keyCode == 27) {
+        /* close the menu if the keydown key is escape */
+        setPlanetMenuIsOpen(false)
+      }
+    }
 
+    window.addEventListener("keydown", setFromEvent)
+    return () => {
+      window.removeEventListner("keydown", setFromEvent)
+    }
+  }, [])
   const planets = planetLinks
     .sort((a, b) => a.slug > b.slug)
     .reduce((acc, item) => {
