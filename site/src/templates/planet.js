@@ -2,19 +2,15 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import PlanetFacts from "../components/planetFacts"
 
 export default function planetPage({ data }) {
   const planet = data.mdx.frontmatter
   const { name, orbit, img, maxTemp } = planet
   return (
     <Layout>
-      <div>
-        <h1>{name}</h1>
-        <h2>{orbit}</h2>
-        {maxTemp}
-        <img src={img} alt={name} width="250px" />
-        <MDXRenderer title={name}>{data.mdx.body}</MDXRenderer>
-      </div>
+      <PlanetFacts name={name} orbit={orbit} img={img} maxTemp={maxTemp} />
+      <MDXRenderer title={name}>{data.mdx.body}</MDXRenderer>
     </Layout>
   )
 }
