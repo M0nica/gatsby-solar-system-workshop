@@ -22,7 +22,7 @@ function Header({ siteTitle, planetLinks = [] }) {
   const [planetMenuIsOpen, setPlanetMenuIsOpen] = React.useState(false)
   React.useEffect(() => {
     const setFromEvent = e => {
-      if (e.key === "Escape" || e.keyCode == 27) {
+      if (e.key === "Escape" || e.keyCode === 27) {
         /* close the menu if the keydown key is escape */
         setPlanetMenuIsOpen(false)
       }
