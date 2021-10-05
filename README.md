@@ -69,8 +69,12 @@ cd site
 yarn start
 ```
 
+This should start up the site locally in your browser at http://localhost:8000/. 
+ 
 
-This should start up the site locally in your browser at http://localhost:8000/. For reference the production deployment of the inital site looks like: TBD and the production deploymeny of the final site looks like: TBD(subject to change).
+## Preview Site
+- initial site: https://gatsbysolarsystem.netlify.app/#
+- final site (After exercise 9): https://deploy-preview-10--gatsbysolarsystem.netlify.app/.
 
 If you encounter the following error 
 ```

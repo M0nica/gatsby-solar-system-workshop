@@ -3,15 +3,11 @@ import * as cardStyles from "./planetCard.module.css"
 import Button from "./button"
 import planets from "./data/planets"
 
-const Fact = props => {
-  return <p className="info"> {props.children} </p>
-}
-
 const PlanetCard = () => {
   return (
     <div className={cardStyles.container}>
       {planets.map(planet => {
-        const { img, name, orbit, maxTemp } = planet
+        const { img, name } = planet
         return (
           <div className={cardStyles.card} key={name}>
             <img src={img} alt={name} className={cardStyles.image} />
