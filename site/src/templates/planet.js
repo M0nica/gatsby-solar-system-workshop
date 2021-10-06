@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import PlanetFacts from "../components/planetFacts"
 
 export default function planetPage({ data }) {
@@ -9,6 +10,7 @@ export default function planetPage({ data }) {
   return (
     <Layout>
       <PlanetFacts name={name} orbit={orbit} img={img} maxTemp={maxTemp} />
+      <MDXRenderer title={name}>{data.mdx.body}</MDXRenderer>
     </Layout>
   )
 }
@@ -22,6 +24,7 @@ export const query = graphql`
         img
         maxTemp
       }
+      body
     }
   }
 `
