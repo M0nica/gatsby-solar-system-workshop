@@ -1,4 +1,4 @@
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/M0nica/gatsby-solar-system"><img src="https://www.netlify.com/img/deploy/button.svg" alt="deploy to netlify button"></a>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/M0nica/gatsby-solar-system-workshop"><img src="https://www.netlify.com/img/deploy/button.svg" alt="deploy to netlify button"></a>
 
 <div> 
   <h1 align="center">Gatsby Workshop</h1>
