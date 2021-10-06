@@ -13,9 +13,19 @@ import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+          author
+        }
+      }
+    }
+  `)
   return (
     <>
-      <Header siteTitle={"Placeholder Title"} />
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
           margin: `0 auto`,
@@ -29,8 +39,9 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Monica Powell |{` `}
-          Built with <a href="https://www.gatsbyjs.com">Gatsby</a>
+          © {new Date().getFullYear()},{" "}
+          {data.site.siteMetadata?.author || `Author`} | Built with{" "}
+          <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
     </>
