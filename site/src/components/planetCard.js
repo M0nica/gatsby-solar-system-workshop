@@ -15,8 +15,9 @@ const PlanetCard = () => {
             <Button
               className={cardStyles.title}
               text={`Visit ${name}`}
-              to="#"
+              to={name.toLowerCase()}
             />
+
           </div>
         )
       })}
