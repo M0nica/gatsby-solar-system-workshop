@@ -1,3 +1,15 @@
+:root {
+  --white: #edf2f5;
+  /* button default */
+  --light-sky-blue: #3371ff;
+  /*button hover */
+  --dark-sky-blue: #2a628f;
+  /* page background */
+  --dark-navy: #13293d;
+  /* card background */
+  --dark-teal: #18435a;
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -9,8 +21,9 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  color: #fff; /*hsla(0, 0%, 0%, 0.8);*/
+  background-color: #020524;
+  font-family: "Inter", sans-serif, georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -51,11 +64,13 @@ template {
   display: none;
 }
 a {
+  color: #fff;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
-a:hover {
+a:hover,
+a:focus {
   outline-width: 0;
 }
 abbr[title] {
@@ -87,6 +102,7 @@ h1 {
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
+  text-align: center;
 }
 mark {
   background-color: #ff0;

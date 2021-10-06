@@ -13,8 +13,6 @@ Gatsby websites are JavaScript applications and generally have a `package.json` 
 - Install dependencies
 - Run the application locally and visit http://localhost:8000 and http://localhost:8000/___graphql
 
-Note: Changes to the gatsby-config require restarting the server to see them on the site (i.e. CTRL + C and then run `npm run start`)
-
 ## Files 🗂
 
 - package.json
@@ -24,3 +22,6 @@ Note: Changes to the gatsby-config require restarting the server to see them on 
 
 ## Example Solution Demo
 - n/a
+
+## Next Exercise
+[01 • Customize Gatsby Site Information](01_instructions.md)

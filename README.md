@@ -3,7 +3,7 @@
 <div> 
   <h1 align="center">Gatsby Workshop</h1>
   <p>
-    This workshop covers the fundamentals of developing fast, accessible sites with <a href="https://www.gatsbyjs.com/">Gatsby</a>, a React framework, and dive deep into the building blocks you’ll need to build your own custom Gatsby sites.
+    This space-themed workshop covers the fundamentals of developing fast, accessible sites with <a href="https://www.gatsbyjs.com/">Gatsby</a>, a React framework, and dive deep into the building blocks you’ll need to build your own custom Gatsby sites.
     
    After completing a mix of lectures and exercises you’ll be able to build a Gatsby site from the ground up and deploy it live. In particular, you’ll learn the ins and outs of creating Gatsby sites, from selecting a starter or theme, using GraphQL to generate the data layer, making Markdown content interactive with MDX, deploying your site, and more!
 
@@ -53,7 +53,6 @@ git clone https://github.com/m0nica/gatsby-solar-system.git
 cd site
 yarn
 ```
-
 ## Running the app
 
 To get the app up and running (and really see if it worked), run:
@@ -70,30 +69,34 @@ cd site
 yarn start
 ```
 
-This should start up the site locally in your browser at http://localhost:8000/. For reference the production deployment of the inital site looks like: **TBD Netlify link** and the production deploymeny of the final site looks like: **TBD Netlify link**
+This should start up the site locally in your browser at http://localhost:8000/. 
+ 
+
+## Preview Site
+- initial site: https://gatsbysolarsystem.netlify.app/#
+- final site (After exercise 9): https://deploy-preview-10--gatsbysolarsystem.netlify.app/.
+
+If you encounter the following error 
+```
+npm ERR! missing script: develop
+```
+that likely means you are in the root of the directory and need to `cd` into the `site` folder.
 
 ### Exercises
 
-The exercises each have a branch associated with them. You can find the exercises under `site/INSTRUCTIONS/` in files labelled like `01_instructions.md`. To get the latest working code for an exercise check out the exercise solution branch.
+The exercises each have a branch associated with them. You can find the exercises under `instructions/` in files labelled like `01_instructions.md`. To get the latest working code for an exercise check out the exercise solution branch.
 
-- [00 • Running a Gatsby Application Locally](/instructions/00_instructions.md)
-- [01 • Customize Gatsby Site Information](/instructions/01_instructions.md)
-- [03 • Create a new page in Gatsby](/instructions/03_instructions.md)
-- [04 • Make Footer Data Dynamic](/instructions/04_instructions.md)
+- [00 • Running a Gatsby Application Locally](instructions/00_instructions.md)
+- [01 • Customize Gatsby Site Information](instructions/01_instructions.md)
+- [02 • Make Navigation and Footer Data Dynamic](instructions/02_instructions.md)
+- [03 • Create a new page in Gatsby](instructions/03_instructions.md)
+- [04 • Add planet data to the graphql server](instructions/04_instructions.md)
+- [05 • Programmatically Create Page for Each Planet](instructions/05_instructions.md)
+- [06 • Add Links to Card Component](instructions/06_instructions.md)
+- [07 • Add Dynamic Links to Navigation](instructions/07_instructions.md)
+- [08 • Add Plaintext Content to Planet Page](instructions/08_instructions.md)
+- [09 • Add MDX (React Components) to Planet Page](instructions/09_instructions.md)
 
-05 • Add planet data to the graphql server
-
-06 • Dynamically create page for each planet
-
-07 • Add Dynamic Links to Navigation
-
-08 • Add Links to Card Component
-
-09 • Add Addt'l Content to Page
-
-10 • Add MDX to Pages
-
-11 • Add  next/prev Navigation Links
 
 ### Workflow
 
@@ -108,12 +111,7 @@ The exercises each have a branch associated with them. You can find the exercise
 
 ### View Slides
 
-- Go to www.monica.dev/gatsbyworkshop
-- The slides can be run locally from this repo by doing the following:
-- `cd slides`
-- `npm install`
-- `npm run dev`
-- View slides locally at: [http://localhost:3000/](http://localhost:3000/)
+- At www.monica.dev/jamstackconf21
 
 <!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
@@ -122,3 +120,10 @@ The exercises each have a branch associated with them. You can find the exercise
 [win-path]: https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/
 [mac-path]: http://stackoverflow.com/a/24322978/971592
 <!-- prettier-ignore-end -->
+
+## Credits
+- Planet Images are from https://www.vecteezy.com
+- Built ontop of https://github.com/gatsbyjs/gatsby-starter-default
+
+## Disclaimers
+The purpose of this project is to teach Gatsby, therefore the planet facts may or may not be accurate.
