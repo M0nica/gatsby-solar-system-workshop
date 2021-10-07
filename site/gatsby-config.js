@@ -4,6 +4,8 @@ module.exports = {
     description: `A website exploring the solar system and the Gatsby technology`,
     author: `Monica Powell`,
     siteUrl: `https://TBD.com/`,
+    phoneNumber: `+1-222-333-4444`,
+    emailAddress: `github@aboutmonica.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

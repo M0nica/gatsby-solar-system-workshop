@@ -88,7 +88,7 @@ function Header({ siteTitle, planetLinks = [] }) {
               Planets
             </button>
           )}{" "}
-          <Link style={{ textDecoration: `none` }} to="/#">
+          <Link style={{ textDecoration: `none` }} to="/contact">
             Contact
           </Link>
         </div>

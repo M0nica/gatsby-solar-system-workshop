@@ -1,6 +1,22 @@
 import * as React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 const ContactInfo = () => {
+  const data = useStaticQuery(graphql`
+    query ContactInfoQuery {
+      site {
+        siteMetadata {
+          title
+          author
+          phoneNumber
+          emailAddress
+        }
+      }
+    }
+  `)
+
+  const { phoneNumber, emailAddress } = data.site.siteMetadata
+
   return (
     <>
       <p>
@@ -8,10 +24,9 @@ const ContactInfo = () => {
         below methods:
       </p>
       <ul>
-        <li>Phone Number: PLACEHOLDER </li>
+        <li>Phone Number: {phoneNumber} </li>
         <li>
-          Email Address:{" "}
-          <a href="mailto:placeholder@email.com">placeholder@email.com</a>{" "}
+          Email Address: <a href={`mailto:${emailAddress}`}>{emailAddress}</a>{" "}
         </li>
       </ul>
     </>
