@@ -26,7 +26,7 @@ const ContactInfo = () => {
       <ul>
         <li>Phone Number: {phoneNumber} </li>
         <li>
-          Email Address: <a href={emailAddress}>{emailAddress}</a>{" "}
+          Email Address: <a href={`mailto:${emailAddress}`}>{emailAddress}</a>{" "}
         </li>
       </ul>
     </>
